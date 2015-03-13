@@ -1,0 +1,286 @@
+/*
+@Filename:               common.css
+@Version:                1.0.0
+@date                    2014-01-06
+@author:                lijt
+@email                  252407193@qq.com
+--------------------------------------------------------------------------------------------*/
+body{
+	font-family: "微软雅黑";
+	background: url("../../../img/servant/body-bg.png") repeat;
+	min-width: 1024px;
+}
+.none{
+	display: none;
+}
+/*****************************header******************************/
+.header{
+	background: #ebebeb;
+	width:100%;
+	height:50px;
+	position: relative;
+}
+.logo{
+	width:242px;
+	height:100%;
+	float: left;
+	text-indent: -5000px;
+	background: url("../../../img/servant/header-logo.png") 85px center no-repeat;
+	padding-left:7%; 
+}
+.user-unlogin,.user-login{
+	position: relative;
+	float: right;
+	padding-right:7%; 
+	height:100%;
+	line-height: 50px;
+}
+.user-unlogin>a,.user-login>a{
+	color:#000000;
+	text-decoration: none;
+	font-size: 14px;
+	display: block;
+	float: left;
+	padding:0 8px;
+	background: url("../../../img/servant/header-border.png")right center no-repeat;  
+}
+.user-unlogin>a:last-child,.user-login>a:last-child{
+	background-image: none; 
+}
+.user-type{
+	position: absolute;
+	display: block;
+	height: 30px;
+	font-size:8px;
+	top:-12px;
+	right:96px;
+}
+.user-info span{
+	display: inline-block;
+	padding: 2px;
+	width: 90px;
+	border: 1px solid #EBEBEB;
+	line-height: 30px;
+	background: url('../../../img/servant/arrow-bottom.png') right center no-repeat;
+}
+.user-info span.user-name{
+	color: #5a8cb4;
+}
+.user-login ul{
+	position: absolute;
+	top: 42px;
+	left: 53px;
+	background-color: #f0f0f0; 
+	border:1px solid #c2c2c2;
+	width: 95px;
+	text-align: center;
+	z-index: 20;
+}
+.user-login ul li{
+	line-height: 30px;
+	border-bottom:1px solid #c2c2c2;
+}
+.user-login ul li a{
+	color: #6f6f6f;
+}
+.user-login ul li:hover{
+	background-color: #232323;
+	cursor: pointer;
+}
+.user-login ul li a:hover{
+	color: #ffffff;
+	text-decoration: none;
+}
+.user-choosenav{
+	background-color: #f0f0f0;
+	border:1px solid #c2c2c2;
+	line-height: 30px;
+}
+/*********************************************wrappar**************/
+.wrappar{
+	height:576px;
+	width: 86%;
+	padding: 0 7%;
+	position: relative;
+}
+/***************************************footer**********************/
+.footer{
+	width: 100%;
+	height:142px;
+	padding: 28px 0 34px;
+	text-align: center;
+}
+.footer>h1{
+	font-family: "华文中宋";
+	font-size: 20px;
+	letter-spacing:10px;
+	margin-bottom:24px; 
+}
+.footer-links{
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 10px; 
+}
+.footer-links li{
+	float: left;
+	background: url("../../../img/servant/header-border.png")right center no-repeat;
+}
+.footer-links li>a{
+	display: block;
+	color: #000000;
+	font-family: "宋体";
+	font-size:12px;
+	padding:0 12px; 
+	text-decoration: none;
+	letter-spacing:4px;
+}
+.footer-links li:last-child{
+	background-image: none; 
+}
+/************************common button********************/
+.btn{
+	width:250px;
+	border:1px solid #c7c7c7;
+	border-bottom:0px;
+	border-right:0px;  
+	border-radius: 4px;
+	height:40px;
+	line-height: 40px;
+	box-shadow: 1px 1px 0px 1px #aaaaaa;
+	background-repeat: repeat-x;
+	background-size: auto 100%;
+	font-size: 14px;
+	font-family:"微软雅黑";
+	letter-spacing:2px;
+}
+.btn-blue{
+	background-image:url("../../../img/servant/btn-blue.png");
+	color:#ffffff;
+	cursor: pointer;
+}
+.btn-green{
+	background-image:url("../../../img/servant/btn-green.png");
+	color:#ffffff;
+}
+.btn-gray{
+	background-image:url("../../../img/servant/btn-gray.png");
+	color:#aaaaaa;
+}
+/***********************contant*****************************/
+.content{
+	/*width:560px;
+	height:284px;*/
+	margin:100px auto 0;
+	background: #f5f5f5;
+	border-radius: 4px;
+	box-shadow: 1px 2px 10px 1px #aaaaaa;
+}
+.content-warning{
+	box-shadow: 1px 2px 20px 1px #da3c3c;
+}
+/********************common form**************************/
+.common-form label{
+	float: left;
+    text-align: right;
+    font-size: 18px;
+    color: #6f6f6f;
+    height:48px;
+    line-height: 48px;
+    margin-top:10px;
+
+}
+.common-form input{
+	margin-top:10px;
+	width:232px;
+	height:48px;
+	padding-left:18px;
+	border:1px solid #c7c7c7;
+	font-size:14px;
+	color:#bdbdbd;
+	border-radius: 4px;
+}
+.input-red{
+	border-color:#dc3636;
+}
+.input-green{
+	border-color:#2caa5b;
+}
+.input-gray{
+	border-color:#aaaaaa; 
+}
+/****************************nav*****************************/
+.nav{
+	/*min-width:850px;*/
+	width:100%;
+	height:70px;
+	position:relative; 
+}
+.nav-logo{
+	display: block;
+	height:100%;
+	width:267px;
+	background: url("../../../img/servant/PandaWork.png") no-repeat 100% 50% #191919;
+	text-indent: -5000px;
+	position: absolute;
+	left: 0;
+	top:0;
+}
+.nav-holder{
+	height:100%;
+	margin-left:267px;
+
+}
+.main-nav{
+	background:url("../../../img/servant/nav-mainbar.png") no-repeat 0% 50% #232323;
+	height:50%;
+	padding-left: 4px;
+}
+.main-nav>li{
+	display: block;
+	float: left;
+	width:128px;
+	height:100%;
+	background: url("../../../img/servant/nav-mainbar.png") no-repeat 100% 50%;
+}
+.main-nav>li.nav-search{
+	float: right;
+	text-indent: -5000px;
+	background-image:none; 
+	
+}
+.main-nav>li>a{
+	display: block;
+	width:100%;
+	height:100%;
+	color: #f1f1f1;
+	font-size:16px;
+	text-align: center;
+	line-height: 35px;
+	text-decoration: none;
+}
+.main-nav>li.nav-search>a{
+	background: url("../../../img/servant/nav-search.png") no-repeat 0% 50% ;
+}
+.crumb{
+	background: #4c4c4c;
+	color: #9e9e9e;
+	font-size: 14px;
+	height:50%;
+	padding-left:4px;
+}
+.crumb>span{
+	height: 35px;
+	display: inline-block;
+	float: left;
+	width:102px;
+	text-align: right;
+	line-height: 35px;
+}
+.crumb>p{
+	height: 35px;
+	display: inline-block;
+	line-height: 35px;
+}
+.crumb-position{
+	color:#f1f1f1; 
+}

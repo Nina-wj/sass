@@ -1,0 +1,143 @@
+body{
+	background-image:none;
+	background-color:#dedede;
+}
+/********************register.html*************************/
+.register{
+	position: relative;
+	color:#6f6f6f;
+	width:417px;
+	height:451px;
+	background-color:#dedede;
+	font-size: 14px;
+}
+.register-form{
+	border-right:2px solid #c2c2c2;
+	padding-right: 39px;
+	width:255px;
+	padding-top: 1px;
+	padding-bottom:9px;
+	height:540px;
+}
+.register-form input,.register-form button{
+	margin-top:8px;
+}
+.register-form input.mobile{
+	margin-top:18px;
+}
+.register-form .register-btn{
+	margin-top:39px;
+}
+.register-form button.none{
+	display: none;
+}
+.register-tip{
+	position:absolute;
+	left:335px;
+	top:208px;
+	height:40px;
+	width: 80px;
+}
+.register-tip .color{
+	color:#5a8cb4;
+	cursor: pointer;
+}
+.register form div{
+	position:absolute;
+	left:0px;
+	top:355px;
+}
+/********************login.html*************************/
+.login{
+	position: relative;
+	color:#6f6f6f;
+	width:417px;
+	height:310px;
+	background-color:#dedede;
+	font-size: 14px;
+}
+.login div.login-tip{
+	position:absolute;
+	left:335px;
+	top:82px;
+	height:40px;
+	width: 80px;
+}
+.login-tip .color{
+	color:#5a8cb4;
+	cursor: pointer;
+}
+.login div{
+	position:relative;
+}
+.login .login-radio{
+	width:11px;
+	height:11px;
+	position: absolute;
+	top:10px;
+	left:1px;
+}
+.login label{
+	float:none;
+	font-size:12px;
+	margin-left: 17px;
+}
+.login div span{
+	font-size:12px;
+	padding-left: 80px;
+}
+.login .errtip{
+	float: right;
+	padding-right: 5px;
+	color: red;
+}
+.common-form div span a{
+	color: #5A8CB4;
+    cursor: pointer;
+	text-decoration: none;
+}
+/********************forget.html**************************/
+.forget-form{
+	width:255px;
+	background-color:#dedede; 
+}
+.forget-form p{
+	font-size: 12px;
+	padding-left: 5px;
+	color:#6f6f6f;
+	line-height: 20px;
+	margin-top:10px;
+}
+.forget-form button{
+	margin-top:18px;
+	margin-bottom:29px;
+}
+/********************safety.html**************************/
+.forget-form p span{
+	color:#5385b4;
+}
+.forget-form .commit{
+	margin-top:118px;
+}
+/********************reset.html**************************/
+.forget-form .btn-gray{
+	margin-top:7px;
+	margin-bottom:0px;
+}
+.forget-form .reset-btn{
+	margin-top:31px;
+}
+/*******************************reset-succeed*****************/
+.reset-succeed{
+	width:255px;
+	height:317px;
+	text-align: center;
+	color:#6f6f6f;
+	font-size: 14px;
+}
+.reset-succeed-text{
+	padding: 90px 0;
+}
+.reset-succeed button{
+	margin-bottom:10px; 
+}

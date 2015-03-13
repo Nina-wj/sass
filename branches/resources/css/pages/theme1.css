@@ -1,0 +1,28 @@
+body {
+  background-color: #f5f5b0; }
+
+.intro {
+  width: 70%;
+  margin: 0 auto; }
+  .intro h2 {
+    line-height: 250%;
+    border-bottom: 1px solid #e0dffc; }
+  .intro p {
+    color: #000101; }
+
+.menu {
+  width: 70%;
+  margin: 0 auto; }
+  .menu h3 {
+    line-height: 150%;
+    font-weight: bold; }
+
+.page {
+  width: 70%;
+  margin: 0 auto; }
+  .page blockquote {
+    padding: 20px;
+    margin: 2px 5px;
+    border: 10px solid #e0dffc;
+    border-radius: 20px;
+    background-color: white; }

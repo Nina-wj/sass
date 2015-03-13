@@ -1,0 +1,189 @@
+.wrapper{
+	width:860px;
+	height:429px;
+	color:#939393;
+	padding-top:60px;
+}
+.wrapper .wrapper-table{
+	width:698px;
+	height:287px;
+	border:1px solid #d2d2d2; 
+	margin:0px auto;
+}
+.wrapper .wrapper-table thead{
+	color:#5a8cb4;
+}
+.wrapper .wrapper-table thead span{
+	display:block;
+	width:99px;
+	float:left;
+	text-align: center;
+}
+.wrapper .wrapper-table td{
+	width:98px;
+	height:35px;
+	border:1px solid #d2d2d2;
+	text-align: center;
+}
+.wrapper .wrapper-table td.grade{
+	width: 100px;
+	height: 37px;
+	cursor: pointer;
+}
+.wrapper td.grade:hover{
+	background-image: url('http://servant.pandawork.net/resources/img/servant/hand.png');
+}
+.wrapper .wrapper-table td.check{
+	width: 100px;
+	height: 37px;
+	cursor: pointer;
+}
+.wrapper td.check:hover{
+	background-image: url('http://servant.pandawork.net/resources/img/servant/hand.png');
+}
+.wrapper .view{
+	position: absolute;
+	width:224px;
+	height:103px;
+	background-color: #8a8a8a;
+	color:#f5f5f5;
+	padding-top:15px;
+	font-size: 12px;
+}
+.wrapper .view-table{
+	width:176px;
+	height:73px;
+	text-align: center;
+	margin:0px auto;
+}
+.wrapper .view-table thead{
+    border-bottom:1px solid #a5a5a5;
+}
+.score{
+	position: absolute;
+	width:156px;
+	background-color: #8a8a8a;
+	color:#f5f5f5;
+	font-size: 12px;
+	padding:15px;
+	z-index: 30;
+}
+.score form label{
+	display: block;
+    line-height: 23px;
+    width:60px;
+    float:left;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.score form select{
+    width:84px;
+    height:25px;
+    float:right;
+    display: block;
+    margin-bottom: 10px;
+}
+.sub-btn{
+	width:140px;
+	height:21px;
+	border:1px solid #f5f5f5;
+	background-color: #8a8a8a;
+	color:#f5f5f5;
+	font-size: 12px;
+	margin-left: 8px;
+	cursor: pointer;
+}
+.wrapper .wrapper-table td.grade:hover{
+	z-index:100;
+	width: 100px;
+	height: 37px;
+	/*background: url(../../../../../resources/img/servant/hand.png) no-repeat 0px 0px;*/
+	cursor: pointer;
+}
+.wrapper .wrapper-table td.scoretd{
+	background:none; 
+	background-color: #8A8A8A;
+	color: #F5F5F5;
+	z-index: 100;
+}
+/********************user.html**************************/
+.container{
+    width:732px;
+    height:458px;
+    padding-top:32px;
+	position:relative;
+}
+.container input,.container button{
+	display:block;
+	margin:8px auto;
+}
+.container .sure{
+	position: absolute;
+	top:375px;
+	left:238px;
+}
+.container .error-state{
+	display: block;
+	margin: 0px auto;
+	width: 232px;
+}
+.container .success-state{
+	display: none;
+}
+/* ------------窄的nav样式 start----------- */
+.main-nav>li>a{
+	line-height: 35px;
+	z-index: 200;
+}
+ .nav-holder{
+	position: relative;
+}
+.main-nav li:hover{
+    background-color: #000;
+}
+.crumb div>span{
+	height: 35px;
+	display: inline-block;
+	float: left;
+	width:102px;
+	text-align: right;
+	line-height: 35px;
+}
+.crumb div p{
+	height: 35px;
+	display: inline-block;
+	line-height: 35px;
+}
+.crumb ul{	
+	font-size:14px;
+}
+.crumb ul li{
+	float:left;
+	width:128px;
+}
+.crumb ul li a{
+	color:#ffffff;
+	display: block;
+	width:100%;
+	height:100%;
+	text-align: center;
+	line-height: 35px;
+	text-decoration: none;
+}
+.sub-a-bg{
+	background:url("../../../img/servant/header-border.png") no-repeat 0px 12px ;
+}
+.sub-li-bg{
+	background:url("../../../img/servant/header-border.png") no-repeat 100% 12px ;
+}
+.libg{
+	position: absolute;
+	z-index:150;
+}
+.footer{
+	padding-top:170px; 
+}
+.main-nav  li.clickbg{
+	background-color: red;
+}
+/* ------------窄的nav样式 end----------- */

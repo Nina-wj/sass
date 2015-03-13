@@ -1,0 +1,76 @@
+/*
+@Filename:               defender.css
+@Version:                1.0.0
+@date                    2014-01-11
+@author:                 wangjing
+@email                  1284663246@qq.com
+--------------------------------------------------------------------------------------------*/
+.pw-validation .focus-field{
+	/*background: #ffffcc;*/
+	/*border: 1px solid #A0A0A0;*/
+}
+.pw-validation .success-field{
+    border-color: #2CAA5B;
+    border-width: 2px;
+}
+/*错误显示*/
+.pw-validation .error-field {
+    border-color:#dc3636;
+    border-width: 2px;
+}
+/*加载显示*/
+.pw-validation .loading-field {
+    border-color:#aaaaaa;
+    border-width: 2px;
+}
+/*inline 样式*/
+.inline .error-state {
+    padding-left: 25px;
+    color: #dc3636;
+    font-size: 12px;
+}
+.inline .pw-tip {
+    /*display: block;*/
+    line-height: 25px;
+    position: static;
+}
+.inline .pw-tip {
+    height: auto;
+    max-width: 1000px;
+    min-height: 25px;
+    min-width: 20px;
+/*    position: absolute;*/
+}
+.inline .tip-content{
+    padding-top: 3px;
+	padding-left: 25px;
+    color: #dc3636;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.inline .loading-state{
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 25px;
+    background: url("../../../img/servant/loading.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+    height: 48px;
+    text-indent: -1000px;
+}
+/*pure 样式的验证*/
+.pure .error-state{
+    display: block;
+    line-height: 25px;
+    position: static;
+    height: auto;
+    max-width: 1000px;
+    min-height: 25px;
+    min-width: 20px;
+}
+.pure .tip-content{
+    padding-top: 3px;
+    padding-left: 25px;
+    color: #dc3636;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+

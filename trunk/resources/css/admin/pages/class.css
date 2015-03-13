@@ -1,0 +1,102 @@
+/* ------------会员添加class-add start----------- */
+.common-form select.commom-info-select{
+	width:152px;
+	padding:0px;
+	border:1px solid #b3b3b3;
+	height:20px;
+}
+/* ------------会员添加class-add end----------- */
+/* ------------会员添加class-type start----------- */
+.class-type-add{
+	margin-top: 32px;
+	text-align: center;
+}
+.class-type-input{
+	padding: 3px 0;
+	width:158px;
+}
+.teacher-holder{
+	height: auto;
+}
+.teacher-holder label{
+	float: left;
+}
+.teacher{
+	float: left;
+	width: 60%;
+	border: 1px solid #B3B3B3;
+    min-height: 100px;
+    padding-bottom: 30px;
+    position: relative;
+    width: 300px;
+}
+.teacher-btn {
+	display: inline-block;
+	margin-right: 20px;
+    padding-left: 5px;
+    background: none repeat scroll 0 0 #898989;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    
+}
+.teacher-name{
+	padding: 3px 5px;
+	width: 50px;
+	background: none repeat scroll 0 0 #898989;
+    border: medium none;
+    color: #FFFFFF;
+    font-weight: bold;
+    
+}
+.teacher-del{
+	margin-left: 5px;
+	background: none repeat scroll 0 0 #898989;
+	height: 30px;
+    width: 25px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+}
+.teacher-input{
+	position: absolute;
+	bottom: 5px;
+    left: 5px;
+    width: 280px;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+}
+.teacher-input input{
+	padding: 3px 5px;
+	border: medium none;
+    font-size: 100%;
+}
+/* ------------会员添加class-type end----------- */
+/* ------------会员添加class start----------- */
+.import-widget{
+	padding:  32px 0px;
+}
+.import-widget select{
+	width:100px;
+}
+.import-widget button{
+	float: right;
+}
+.operation span{
+	color:#0000ff;
+}
+/* ------------会员添加class end----------- */
+.teacher-show{
+    margin: 10px;
+}
+.teacher-show table{
+	position: relative;
+	width: 90%;
+    zoom: 1;
+    text-align: center;
+    color: green;
+}
+.dlg-inner-frame{
+	overflow: auto;
+}

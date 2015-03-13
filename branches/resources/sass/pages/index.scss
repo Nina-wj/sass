@@ -1,0 +1,173 @@
+@import "../base/main";
+body{
+	@include resetMargin;
+	background-#{$color}: rgba(lighten($mainBgColor, 30%),.3);
+}
+.container{
+	margin: 0 auto;
+	width: $containerWidth;
+}
+.logo{
+	height: $headerHeight;
+}
+header{
+	@extend .logo;
+	background-color: $navBgColor;
+	h3{
+		float: left;
+		margin-top: 0;
+		line-height: $headerHeight;
+		color: darken($fontColor, 10%);
+	}
+	ul{
+		float: right;
+		@include resetMargin;
+		line-height: $headerHeight;
+		list-style: none;
+		li{
+			float: left;
+			padding: 0 10px;
+			color: $fontColor;
+			.download{
+				@include padding(2, 2px, 5px);
+				background-color: $mainBgColor;
+				@include borderset(1px, $fontColor);
+				color: $fontColor;
+				line-height: 18px;
+			}
+		}
+	}
+}
+.menu{
+	padding-top: 20px;
+	background-#{$color}: $mainBgColor;
+	min-height: 250px;
+	.row-position{
+		position: relative;
+	}
+	h1{
+		@include margin(2, 10px, 0);
+		color: $fontColor;
+	}
+	p{
+		color: $fontColor
+	}
+	.btns{
+		position: relative;
+		.download{
+			position: absolute;
+			@include padding(2, 10px, 13px);
+			background-#{$color}: darken($mainBgColor, 15%);
+			@include borderset(1px, darken($mainBgColor, 20%));
+			color: $fontColor;
+			font-weight: bold;
+			font-size: 12px;
+			font: italic bold 12px/20px arial,sans-serif;
+			line-height: 12px;
+		}
+	}
+	.circles{
+		position: absolute;
+		right: -20px;
+		top: 20px;
+		width: $containerWidth * 0.3;
+		height: 100px;
+		@for $i from 1 to 5{
+			.circle-#{$i}{
+				display: inline-block;
+				width: $i * 30px;
+				height:$i * 30px;
+				border-radius: $i * 20px;
+				background-#{$color}: rgba(darken($mainBgColor, 15%), $i * .2);
+			}
+		}
+	}
+	.icon{
+		padding-left: 230px;
+		width: 200px;
+		span{
+			@include padding(2, 3px, 8px);
+			display: inline-block;
+			background-#{$color}:  rgba(darken($mainBgColor, 15%), .6);
+			font-size: 10px;
+			color: $fontColor;
+			vertical-align: top;
+		}
+		span.goto{
+			background-#{$color}:  rgba(darken($mainBgColor, 15%), .3);
+		}
+		span.function{
+			@include margin(2, 2px, 0);
+		}
+	}
+}
+.page{
+	padding-top: 10px;
+	.left{
+		float: left;
+		width: 70%;
+		padding-right: 5%;
+		padding-top: 10px;
+		h3{
+			color: darken($mainBgColor, 15%)
+		}
+		.icon{
+			width: 100px;
+			height: 100px;
+			line-height: 120px;
+			text-align: center;
+			border-radius: 60px;
+			background-#{$color}: lighten($mainBgColor, 30%);
+			i{
+				font-size: 50px;
+				color: lighten($mainBgColor, 5%)
+			}
+		}
+		ul li{
+			float: left;
+			width: 33%;
+			list-style: none;
+		}
+	}
+	.right{
+		float: right;
+		width: 19%;
+		@include padding(2, 5px, 3%);
+		background-#{$color}: lighten($navBgColor, 15%);
+		color: $fontColor;
+		.import-tip{
+			color: lighten($mainBgColor, 15%);
+			font-weight: bold;
+		}
+		p{
+			margin-bottom: 0;
+		}
+		button{
+			margin-top: 20px;
+			margin-bottom:40px;
+			@include padding(2, 5px, 15px);
+			background-#{$color}: $fontColor;
+			@include borderset(1px, $mainBgColor);
+			color: $navBgColor;
+		}
+	}
+}
+
+footer{
+	margin-top: 10px + 10px;
+	height: $containerWidth * 0.1;
+	background-#{$color}: $navBgColor;
+	color: $fontColor;
+	#copy{
+		text-align: center;
+	}
+}
+*:before, *:after {
+    box-sizing: inherit;
+}
+*{
+	box-sizing: inherit;
+}
+button{
+	font: normal;
+}

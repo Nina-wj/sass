@@ -1,0 +1,115 @@
+/*
+@Filename:               question.css
+@Version:                1.0.0
+@date                    2013-12-10
+@author:                lijt
+@email                  252407193@qq.com
+--------------------------------------------------------------------------------------------*/
+.table-position{
+	margin-top:64px; 
+}
+.widget-button{
+	padding-top: 68px;
+	text-align: center;  
+}
+/* ------------------------content-holder------------------------ */
+.nav-holder{
+	border:1px solid #cccccc;
+	width:180px;
+	float: left;
+}
+.nav-holder>input,.nav-holder>select{
+	display: block;
+	margin: 10px;
+}
+.nav-holder>input{
+	padding: 3px 0;
+	width:158px;
+}
+.nav-holder>select{
+	width:162px;
+}
+.nav-holder>div.content{
+	width:158px;
+	padding: 10px 0;
+	margin: 10px;
+}
+/* ------------------------table-holder------------------------ */
+.table-holder{
+	margin-left: 200px;
+	width: 80%;
+}
+.button-right{
+	padding-left: 60%;
+	height:64px;
+}
+.button-right button{
+	/*float: left;*/
+}
+/* ---------题型管理pattern start---------- */
+.content{
+	width:73%;
+	padding-top: 70px;
+	padding-left: 90px; 
+	margin-left:auto;
+	margin-right:auto;
+}
+.content span:hover{
+	border-bottom: #000 solid 1px;
+}
+.none-background{
+	padding-left:20px;
+	background:url(../../../../resources/img/triangle.png) no-repeat 0px 6px;
+}
+.content ul{
+	padding-left:20px;
+}
+/* ----------------题型管理pattern end-------------------------------- */
+/* ---------题数管理number-test start------------------- */
+.commom-info{
+	margin-left:120px;
+	font-size:15px;
+}
+.commom-info-height{
+	height: 40px;
+}
+.commom-info input,select{
+	width:150px;
+	padding:0px;
+}
+.commom-info label{
+	padding-top:5px;
+	width:115px;
+	display: inline-block;
+	font-weight:bold;
+}
+.commom-info label span{
+	color: red;
+}
+.num-btn{
+	margin-left:158px;
+	margin-top:32px;
+}
+.commom-info p.info-dialog{
+	height: 30px;
+}
+/*---------------------ztree添加按钮样式----------------------*/
+.ztree li span.button.add{
+	background-position: -145px -1px;
+}
+/* ---------题数管理number-test   end------------------- */
+/* ---------题数修改number-editor start------------------- */
+.num-btn-margin{
+	margin-left:155px;
+	margin-top:32px;
+}
+/* ---------题数修改number-editor  end------------------- */
+/*----------------error-test start-----------*/
+.error-select{
+	margin-bottom:32px; 
+}
+/*----------------error-test end-----------*/
+.newText{
+	width: 10em;
+}
+

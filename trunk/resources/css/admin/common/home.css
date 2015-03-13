@@ -1,0 +1,368 @@
+/*-----------------------------------------------------------------------------
+* @Description: 新版的后台css样式，用于横版菜单 (home.css)
+* @Version: 	V3.0.0
+* @author: 		simon(406400939@qq.com)
+* @date			2013.07.12
+* ==NOTES:=============================================
+* v1.0.0(2013.07.12):
+* 	初始生成 
+* ---------------------------------------------------------------------------*/
+
+
+/*__global definition
+--------------------------------------------------------------------------------------------*/
+body{
+	height: 100%;
+	font-size: 14px;
+	font-family:  \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, \9ED1\4F53;/*微软雅黑，宋体，黑体*/
+	overflow: hidden;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover,
+a:focus{
+	color: #333;
+	text-decoration: underline;
+}
+.clear-after{
+	display: block;
+	clear: both;
+	height: 0;
+	font-size:0;
+	line-height: 0;
+}
+
+/*__logo-bar
+--------------------------------------------------------------------------------------------*/
+.logo-bar{
+	position: relative;
+	height: 40px;
+	padding-right: 10px;
+	background: url("../../../img/admin/1920.jpg") left top repeat-x;
+	color: #fff;
+	text-align: right;
+}
+.logo-bar .logo{
+	position: absolute;
+	left: 10px;
+	top: 0;
+	height: 100%;
+	padding-left: 20px;
+	background: url(../../../img/admin/cloud.png) left center no-repeat;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 40px;
+}
+.logo-bar .logo:focus,
+.logo-bar .logo:hover{
+	text-decoration: none;
+}
+/*---用户信息---*/
+.user-name{
+	display: block;
+	position: relative;
+	float: right;
+	height: 25px;
+	margin: 15px 0 0 10px;
+	color: #fff;
+	line-height: 25px;
+	cursor: pointer;
+}
+
+.user-name h2{
+    position: relative;
+    border-radius: 2px 2px 0 0;
+    padding: 0 10px 0 30px;
+}
+
+.user-name:hover h2,
+.user-name:focus h2,
+.user-name h2.current{
+	position: relative;
+	background: url("../../../img/admin/transparent.png") left top repeat;
+	background: #fff;
+	color: #3366cc;
+	text-decoration: none;
+}
+.user-name h2:focus .avator-icon,
+.user-name h2:hover .avator-icon,
+.user-name h2.current .avator-icon{
+    background: url("../../../img/admin/user-blue.png") center center no-repeat;
+}
+.user-name .avator-icon{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 25px;
+	height: 25px;
+	background: url("../../../img/admin/user.png") center center no-repeat;
+}
+/*--用户信息列表--*/
+.userinfo{
+	display: none;
+	right:0;
+	top: 100%;
+	position: absolute;
+	width: 230px;
+	border: 1px solid #d0d0d0;
+	border-radius: 0 0 3px 3px;
+	padding-bottom: 31px;
+	background: #fff;
+	z-index: 99;
+	color: #000;
+	text-align: left;
+	cursor: default;
+}
+.user-name .show{
+	display: block;
+}
+.userinfo a{
+	color: #3366cc;
+	text-decoration: none;
+}
+/*-用户信息-*/
+.userinfo .info{
+	min-height: 80px;
+	border-bottom: 1px solid #d0d0d0;
+	padding: 20px 0 0 80px;
+	text-align: left;
+}
+.userinfo .info .user-avator{
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	width: 60px;
+	height: 60px;
+}
+.userinfo .info .user-avator img{
+	width: 100%;
+	height: 100%;
+	vertical-align: bottom;
+}
+.userinfo .info p{
+	display: block;
+	position: relative;
+	padding-left: 65px;
+	line-height: 25px;
+	color: #333;
+}
+.userinfo .info .title{
+	position: absolute;
+	left: 10px;
+	top: 0px;
+	width: 50px;
+	line-height: 25px;
+}
+/*-登出-*/
+.userinfo .logout{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #d0d0d0;
+	background: #eeeeee;
+}
+.userinfo .logout a{
+	display: block;
+	float: left;
+	height: 100%;
+	width: 50%;
+	text-align: center;
+}
+.userinfo .logout a:hover{
+	background: #E0E9F6;
+}
+.userinfo .logout .change-pwd{
+	width: 49%;
+	border-right: 1px solid #d0d0d0;
+}
+.userinfo .common-item{
+	padding-left: 2em;
+	line-height: 30px;
+}
+/*---版权---*/
+.copyright{
+	display: block;
+	position: relative;
+	float: right;
+	width: 25px;
+	height: 25px;
+	margin-top: 15px;
+	color: #fff;
+}
+.copyright .symbol{
+	display: block;
+	padding: 0;
+	font-size: 18px;
+	text-align: center;
+	line-height: 25px;
+	cursor: pointer;
+}
+.copyright:hover,
+.copyright:focus{
+	border-radius: 2px 2px 0 0;
+	background: url("../../../img/admin/transparent.png") left top repeat;
+	color: #fff;
+	text-decoration: none;
+}
+
+.copyright span{
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 40px;
+}
+.copyright p{
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: -100%;
+	z-index: 99;	
+	width: 240px;
+	border: 1px solid #d0d0d0;
+	border-radius: 0  0 3px 3px;
+	padding: 5px 10px;
+	background: #fff;
+	color: #000;
+	text-align: left;
+	font-size: 12px;
+	font-style: normal;
+}
+.copyright:hover p,
+.copyright:focus p,
+.copyright:focus p.show{
+	display: block;
+}
+
+/*__holder
+--------------------------------------------------------------------------------------------*/
+.holder{
+	padding: 5px;
+	background: #EBEBEB  url("../../../img/admin/bg-main.png") left top repeat-x;
+}
+/*__menu
+--------------------------------------------------------------------------------------------*/
+.menu{
+	height: 32px;
+}
+.menu-item {
+	display: block;
+	float: left;
+	background: #f2f2f2;
+}
+.menu-item:hover .menu-title{
+	background: #fafafa;
+}
+.menu-item .menu-title{
+	display: block;
+	position: relative;
+	border: 1px solid #DCDCDC;
+	border-bottom: none;
+	border-radius: 3px 3px 0 0 ;
+	padding: 5px 10px;
+	/*box-shadow: inset 0px 0px 2px #D7D3D4;*/
+	text-align: center;
+	line-height: 20px;
+}
+.sub-menu{
+	display: none;
+	position: absolute;
+	left: 5px;
+	top: 76px;
+	border: 1px solid #c3c3c3;
+	background: #F8F8F8;
+}
+.sub-menu .next{
+	background:#F8F8F8 url(../../../img/admin/triangle-r.png) right center no-repeat;
+	cursor: pointer;
+}
+.sub-menu li a{
+	display: block;
+	height: 20px;
+	padding: 5px 20px;
+	text-decoration: none;
+	line-height: 20px;
+	overflow: hidden;
+	white-space:nowrap;
+}
+.sub-menu li:hover > a{
+	background-color: #FFFCF5;
+}
+/*__crumb
+--------------------------------------------------------------------------------------------*/
+.crumb{
+	height: 27px;
+	border: 1px solid #e3e3e3;
+	background-color: #efefef;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#efefef)); 
+	background-image: -webkit-linear-gradient(top, #ffffff, #efefef); 
+	background-image:    -moz-linear-gradient(top, #ffffff, #efefef); 
+	background-image:      -o-linear-gradient(top, #ffffff, #efefef); 
+	background-image:         linear-gradient(to bottom, #ffffff, #efefef); 
+	background-color: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#efefef); 
+    zoom: 1;
+}
+.crumb ul{
+	height: 100%;
+}
+.crumb li{
+	display: block;
+	float:left;
+	height: 100%;
+}
+.crumb li a{
+	display:block;
+	height: 100%;
+	padding: 0 20px 0 20px;
+	line-height: 27px;
+}
+.crumb li a:hover{
+	text-decoration: none;
+}
+.crumb li.first a{
+	background-color: #f5f5f5;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5)); /* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #ffffff, #f5f5f5); /* Firefox 3.6-15 */
+	background-image:      -o-linear-gradient(top, #ffffff, #f5f5f5); /* Opera 11.10+ */
+	background-image:         linear-gradient(to bottom, #ffffff, #f5f5f5); /* Firefox 16+ */
+	background-color: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#f5f5f5); 
+    zoom: 1;
+}
+.crumb li a{
+	background:url("../../../img/admin/crumb-middle.png") left top no-repeat;
+	cursor: default;
+}
+.crumb li.last a{
+	background:url("../../../img/admin/last.png") left top no-repeat;
+	font-weight: bold;
+	cursor: pointer;
+}
+/*__content
+--------------------------------------------------------------------------------------------*/
+.content-wrapper{
+	padding: 5px;
+	border: 1px solid #c9c9c9;
+	background: #ffffff;
+	box-shadow: 0 0 4px #eee;
+}
+.content{
+	height: 100%;
+	border: 1px solid #ccc;
+	background: #f9f9f9;
+}
+/*右侧显示内容*/
+.content  iframe{
+	width: 100%;
+	height: 100%;
+	border: 0;
+	overflow: auto;
+}

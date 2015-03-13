@@ -1,0 +1,439 @@
+/*
+@Filename:                widget.css
+@Version:                1.0.0
+@date                    2012-8-14
+@author:                huanhuan
+@email                  965788210@qq.com
+--------------------------------------------------------------------------------------------*/
+
+
+/*******************************common style************************************/
+.center{
+	text-align: center !important;
+}
+/*******************************common pagination style************************************/
+.page{	
+	/*width: 1024px;*/
+	margin: 20px;
+}
+.pagination{
+	width: 90%;
+	margin: 20px auto 0px auto;
+	text-align: right;
+}
+.page-number{
+	display: inline-block;
+	padding: 5px 8px;
+	background-color: #dff2fc;
+	font-weight: bold;
+	margin-left: 8px;
+}
+a.page-number:hover{
+	background-color: #004098;
+	color: #fff;
+}
+
+/***********************************common table style***********************************/
+.common-table{
+	width: 90%;
+	margin: 10px auto 0px; 
+	border: 1px solid #D0D0D0;
+}
+.common-table th,.common-table td{
+	padding: 5px 8px;
+	border-color: #D0D0D0;
+	border-style: none solid solid;
+    border-width: medium 1px 1px;
+	text-align: center;
+	word-break: break-all;
+    word-wrap: break-word;
+    max-width: 30%;
+}
+.common-table th{
+	background-color: #ECECEC;
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+.common-table tbody tr{
+	background-color: #ffffff;
+	color: #555555;
+}
+.common-table tbody tr:nth-child(2n){
+	background-color: #f3f3f3;
+}
+.common-table tbody tr{
+	background-color: expression((this.sectionRowIndex % 2 == 0) ? "#ffffff" : "#f3f3f3" );
+}
+.common-table tbody tr:hover{
+	background-color: #e0e9f6;
+	cursor: pointer;
+}
+select{
+	margin-right: 10px;
+}
+td.operation{
+	 white-space:nowrap;
+}
+td.operation a{
+	color:#0000ff;
+	text-decoration: underline;
+	display:inline-block;
+	padding: 0 5px;
+}
+/*----------------table width end-----------*/
+/***********************************button style***********************************/
+.btn{
+	display: inline-block;
+	height: 22px;
+	margin: 0 5px;
+	background: url('../../../img/admin/buttonEnabled.png') repeat-x;
+	border-color: #C0C0C0 #C0C0C0 #9B9B9B;
+	border-width: 1px;
+	border-style: solid;
+	cursor: pointer;
+}
+.btn:hover{
+	text-decoration: none;
+	background: url('../../../img/admin/buttonHover.png') repeat-x;
+}
+.btn span{
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 23px;
+	padding-right: 8px;
+}
+.btn-search span{
+	background: url('../../../img/admin/icon.png') 4px 3px no-repeat;
+}
+.btn-reset span{
+	background: url('../../../img/admin/icon.png') 4px -20px no-repeat;
+}
+.btn-del span{
+	background: url('../../../img/admin/icon.png') 4px -46px no-repeat;
+}
+.btn-pub span{
+	background: url('../../../img/admin/icon.png') 2px -69px no-repeat;
+}
+.btn-add span{
+	background: url('../../../img/admin/icon.png') 2px -94px no-repeat;
+}
+.btn-save span{
+	background: url('../../../img/admin/icon.png') 2px -117px no-repeat;
+}
+.btn-back span{
+	background: url('../../../img/admin/icon.png') 2px -138px no-repeat;
+}
+.btn-import span{
+	background: url('../../../img/admin/icon.png') 2px -184px no-repeat;
+}
+.btn-export span{
+	background: url('../../../img/admin/icon.png') 2px -158px no-repeat;
+}
+.btn-replace span{
+	background: url('../../../img/admin/icon.png') 2px -235px no-repeat;
+}
+.btn-help span{
+	background: url('../../../img/admin/icon.png') 2px -257px no-repeat;
+}
+.btn-changePWS span{
+	background: url('../../../img/admin/icon.png') 2px -282px no-repeat;
+}
+.btn-editor span{
+	background: url('../../../img/admin/icon.png') 2px -309px no-repeat;
+}
+.btn-sure span{
+	background: url('../../../img/admin/icon.png') 2px -332px no-repeat;
+}
+.btn-forward span{
+	background: url('../../../img/admin/icon.png') 2px -351px no-repeat;
+}
+.btn-top span{
+	background: url('../../../img/admin/icon.png') 2px -374px no-repeat;
+}
+.btn-login span{
+	background: url('../../../img/admin/icon.png') 2px -396px no-repeat;
+}
+@font-face {
+    font-family: 'EntypoRegular';
+    src: url('../../../font/entypo-webfont.eot');
+    src: url('../../../font/entypo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../font/entypo-webfont.woff') format('woff'),
+         url('../../../font/entypo-webfont.ttf') format('truetype'),
+         url('../../../font/entypo-webfont.svg#EntypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../../../font/league_gothic-webfont.eot');
+    src: url('../../../font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../font/league_gothic-webfont.woff') format('woff'),
+         url('../../../font/league_gothic-webfont.ttf') format('truetype'),
+         url('../../../font/league_gothic-webfont.svg#EntypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+	margin: .5em 0;
+}
+
+#container {
+	display: block;
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/********************************form style**************************************/
+.control-label {
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 140px;
+}
+.input-group{
+	margin-bottom: 20px;
+	min-height: 22px;
+	height: 100%;
+}
+.controls{
+margin-left: 160px;
+}
+.newText{
+	width: 15em;
+	/*height: 25px;*/
+	padding: 3px 5px;
+	font-size: 100%;
+	border: 1px solid #b3b3b3;
+}
+.help-inline {
+    display: inline-block;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+.newText:focus{
+	border: 1px solid #406b9b;
+}
+.common-form{
+	/* width: 80%; */
+}
+.common-form table{
+}
+.common-form th,.common-form td{
+	padding: 8px 3px;
+}
+.common-form select{
+	width: 15em;
+	height: auto;
+}
+.common-form textarea{
+	width: 500px;
+	height: 150px;
+	resize: none;
+}
+.add-on{
+	position: relative;
+	top: -2px;
+	_top: -7px;
+	*top: -7px;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    min-width: 16px;
+    padding: 6px;
+    margin: 0 -4px;
+    background: #EEEEEE;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+/****************************login style*************************************/
+.login-bg{
+	background: #DADEE2;
+}
+.login-box{
+	position: absolute;
+	width: 450px;
+	border: 1px solid #B3B3B3;
+}
+.login-titleBar{
+	padding: 5px 6px 3px;
+	background: url('../../../img/admin/titleBar.png') repeat-x;
+	cursor: move;
+}
+.login-titleBar span{
+	padding: 0px 4px;
+	font-weight: bold;
+}
+.login-content{
+	padding: 10px;
+	background: #ffffff;
+}
+.login-user,.login-psw,.login-remember{
+	width: 300px;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+.login-remember a{
+	position: relative;
+	top: 5px;
+}
+.login-user label,.login-psw label,.login-remember label{
+	display: inline-block;
+	width: 8em;
+	text-align: right;
+	margin-right: 5px;
+}
+.login-button{
+	margin: 10px 0;
+	text-align: center;
+}
+.login-forgetPsw{
+	display: block;
+	text-align: right;
+	text-decoration: underline;
+	color: #2c548d;
+	font-style: italic;
+}
+/*****************************模拟file style********************************/
+.file-box{
+	position: relative;
+	width: 290px;
+	zoom:1;
+}
+.file-box input.file{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 27px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	opacity:0;
+}
+/******************************fieldset style***************************************/
+fieldset,.holder{
+	border: 1px solid #cccccc;
+	padding: 15px;
+}
+legend{
+	font-size: 14px;
+}
+.holder{
+	position: relative;
+}
+.title{
+	position: absolute;
+	top: -18px;
+	left: 15px;
+	font-size: 14px;
+	background-color:#fff; 
+}
+/******************************link style***************************************/
+a{
+	text-decoration:none;
+	color: #367CB4;
+}
+a:hover{
+	color: #367CB4;
+	text-decoration:underline;
+	cursor: pointer;
+}
+
+/******************************tab style (by Simon)*****************************/
+.common-tab{
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.common-tab li{
+    position: relative;
+    bottom: -1px;
+    float: left;
+    margin: 0 0 0 4px;
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    background: url("../../../img/admin/tabEnabled.png") repeat-x scroll 0 -2px #E2E2E2;
+    cursor: pointer;
+}
+
+.common-tab li:hover,
+.common-tab li.current{
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+.common-tab li a{
+    color: #333;
+    text-decoration: none;
+}
+/***************************toolbar style (by Simon)****************************/
+.common-toolbar{
+    width: 90%;
+    margin: 20px auto;
+    /*.clearfix();*/
+}
+.common-toolbar ul{
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.common-toolbar li{
+    position: relative;
+    float: left;
+    left: -1px;
+    border-left: 1px solid #ccc;
+    padding: 3px 20px;
+    background: url("../../../img/admin/tabEnabled.png") repeat-x scroll 0 -2px #E2E2E2;
+    cursor: pointer;
+}
+.common-toolbar li a{
+    color: #333;
+    text-decoration: none;
+}
+.common-toolbar li.current{
+    background: #fff;
+    font-weight: bolder;
+}
+
+.common-toolbar li:hover{
+    background: #fff;
+}
+/***************************header-title(by lijt)**********************/
+.header-title{
+	border-bottom: 7px solid #263156;
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto; 
+	margin-top: 50px; 
+}
+.header-title>a{
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 22px;
+	border:1px solid #999999;
+	border-radius: 5px 5px 0 0;
+	background: #f3f3f4;
+	color:333333;
+	padding: 0 12px;
+	float: left;
+	margin-right:4px;
+	border-bottom: 1px solid #3d5aa1; 
+}
+.header-title>a:hover{
+	text-decoration: none;
+}
+.header-title  a.current{
+	background: #3d5aa1;
+	color: #ffffff;
+}
+.wrapper{
+	width:80%;
+	margin:0px auto;
+	margin-top:32px;
+}

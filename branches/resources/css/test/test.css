@@ -1,0 +1,29 @@
+div.red1 {
+  width: 80px;
+  height: 40px;
+  background-color: #ff4848;
+  padding: 5px;
+  margin: 2px 0;
+  color: #000100;
+  height: 37.5px; }
+  div.red1:hover {
+    background-color: #ff5757; }
+
+div.red2 {
+  width: 100px;
+  height: 40px;
+  background-color: #ff4848;
+  padding: 5px;
+  margin: 2px 0;
+  color: #000100; }
+
+div.red2:hover {
+  background-color: #ff3e3e; }
+
+div.red3 {
+  width: 110px;
+  height: 40px;
+  background-color: #ff4848;
+  padding: 5px;
+  margin: 2px 0;
+  color: #000100; }

@@ -1,0 +1,221 @@
+.wrappar{
+	height: auto;
+	padding: 0 7%;
+    position: relative;
+    width: 86%;
+}
+.study-wrapper{
+    width: 850px;
+    padding-top: 67px;
+    margin: 0px auto;
+    color: #6F6F6F;
+}
+.study-nav{
+	float: left;
+	width: 80px;
+}
+.study-content{
+	float: left;
+	padding: 90px 0px 125px 0px;
+	margin: 0px;
+	width: 770px;
+	min-height:185px;
+}
+.study-content .search{
+	width: 480px;
+	height: 35px;
+	margin: 0px auto 40px auto;
+	border-left: 1px solid #d4d4d4;
+	border-right: 1px solid #d4d4d4;
+	background: #e6e6e6;
+	position:relative;
+}
+.study-content .search.question-set{
+	border-right: 0px;
+	background: #F5F5F5;
+}
+.study-content .search a{
+	display: inline-block;
+	margin-right: -4px;
+	width: 70px;
+	height: 24px;
+	padding: 7px 26px 0px 26px;
+	border-right: 1px solid #d4d4d4;
+	color: #6F6F6F;
+}
+.study-content .search.question-set a{
+	background: #e6e6e6;
+}
+.study-content .search .down{
+	display: inline-block;
+	height: 4px;
+	width: 7px;
+	background: url('../../../img/servant/slidedown.png') no-repeat;
+	margin-left: 5px;
+}
+.study-content .search .search-btn{
+	display: inline-block;
+	float: right;
+	margin-right: 22px;
+	margin-top: 5px;
+	height: 24px;
+	width: 28px;
+	background: url('../../../img/servant/nav-search.png') no-repeat;
+}
+.study-content table{
+	width: 480px;
+	margin: 0px auto;
+	table-layout: fixed;
+}
+.study-content table td,.study-content table th{
+	line-height: 35px;
+	text-align: center;
+	word-break: keep-all;
+	overflow: hidden;
+}
+.study-content table tfoot td{
+	border-top: 2px solid #bebebe;
+	line-height: 63px;
+	color: #5a8cb4;
+	font-weight: bold;
+}
+.study-content .study-table thead{
+	color: #5a8cb4;
+}
+.study-content .study-table .opration{
+	text-decoration: underline;
+	color: #6F6F6F;
+}
+.study-content .study-table .question{
+	width: 200px;
+}
+.study-nav li{
+	position: relative;
+	left: 0px;
+	width: 80px;
+	height: 80px;
+	border-radius: 4px 0px 0px 4px;
+    box-shadow: -4px 2px 10px 1px #AAAAAA inset;
+    background: #f0f0f0;
+    text-align: center;
+}
+.study-nav li.first{
+	box-shadow: 0px 2px 10px 0px #AAAAAA;
+}
+.study-nav li.current{
+	width: 82px;
+	box-shadow: -11px 2px 10px 0px #AAAAAA;
+    background: #F5F5F5;
+}
+.study-nav li a{
+	display: block;
+	color: #d3d3d3;
+}
+.study-nav li.current a{
+	color: #5a8cb4;
+}
+.study-nav li img{
+	margin-top: 20px;
+}
+.study-content-top{
+	padding-top:43px;
+	min-height: 232px;
+}
+.first-down{
+	position: absolute;
+	top:35px;
+	left:-1px;
+	background-color: #f5f5f5;
+	color: #6F6F6F;
+}
+.first-down li{
+	height: 24px;
+    width: 122px;
+    border-color: #D4D4D4;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    text-align: center;
+    padding-top: 7px;
+}
+.second-down{
+	position: absolute;
+	top:35px;
+	left:122px;
+	background-color: #F5F5F5;
+    color: #6F6F6F;
+}
+.second-down li{
+	height: 24px;
+    width: 122px;
+    border-color: #D4D4D4;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    text-align: center;
+    padding-top: 7px;
+}
+.study-content .search a.source{
+	border-color: #D4D4D4;
+    border-style: solid;
+    border-width: 2px 2px 2px 1px;
+	background-color: #f5f5f5;
+}
+.study-content .search a span.down-img{
+	background: url('../../../img/servant/arrow-top.png') no-repeat;
+}
+/* ------------窄的nav样式 start----------- */
+.main-nav>li>a{
+	line-height: 35px;
+	z-index: 200;
+}
+ .nav-holder{
+	position: relative;
+}
+.main-nav li:hover{
+    background-color: #000;
+}
+.crumb div>span{
+	height: 35px;
+	display: inline-block;
+	float: left;
+	width:102px;
+	text-align: right;
+	line-height: 35px;
+}
+.crumb div p{
+	height: 35px;
+	display: inline-block;
+	line-height: 35px;
+}
+.crumb ul{	
+	font-size:14px;
+}
+.crumb ul li{
+	float:left;
+	width:128px;
+}
+.crumb ul li a{
+	color:#ffffff;
+	display: block;
+	width:100%;
+	height:100%;
+	text-align: center;
+	line-height: 35px;
+	text-decoration: none;
+}
+.sub-a-bg{
+	background:url("../../../img/servant/header-border.png") no-repeat 0px 12px ;
+}
+.sub-li-bg{
+	background:url("../../../img/servant/header-border.png") no-repeat 100% 12px ;
+}
+.libg{
+	position: absolute;
+	z-index:150;
+}
+.footer{
+	padding-top:170px; 
+}
+.main-nav  li.clickbg{
+	background-color: red;
+}
+/* ------------窄的nav样式 end----------- */

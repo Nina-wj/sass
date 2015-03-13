@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  background-color: rgba(164, 164, 164, 0.3); }
+
+.container {
+  margin: 0 auto;
+  width: 70%; }
+
+.logo, header {
+  height: 40px; }
+
+header {
+  background-color: #2e2e2e; }
+  header h3 {
+    float: left;
+    margin-top: 0;
+    line-height: 40px;
+    color: #e6e6e6; }
+  header ul {
+    float: right;
+    margin: 0;
+    line-height: 40px;
+    list-style: none; }
+    header ul li {
+      float: left;
+      padding: 0 10px;
+      color: white; }
+      header ul li .download {
+        padding: 2px 5px;
+        background-color: #575757;
+        border: 1px solid white;
+        color: white;
+        line-height: 18px; }
+
+.menu {
+  padding-top: 20px;
+  background-color: #575757;
+  min-height: 250px; }
+  .menu .row-position {
+    position: relative; }
+  .menu h1 {
+    margin: 10px 0;
+    color: white; }
+  .menu p {
+    color: white; }
+  .menu .btns {
+    position: relative; }
+    .menu .btns .download {
+      position: absolute;
+      padding: 10px 13px;
+      background-color: #313131;
+      border: 1px solid #242424;
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      font: italic bold 12px/20px arial,sans-serif;
+      line-height: 12px; }
+  .menu .circles {
+    position: absolute;
+    right: -20px;
+    top: 20px;
+    width: 21%;
+    height: 100px; }
+    .menu .circles .circle-1 {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 20px;
+      background-color: rgba(49, 49, 49, 0.2); }
+    .menu .circles .circle-2 {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      border-radius: 40px;
+      background-color: rgba(49, 49, 49, 0.4); }
+    .menu .circles .circle-3 {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      border-radius: 60px;
+      background-color: rgba(49, 49, 49, 0.6); }
+    .menu .circles .circle-4 {
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      border-radius: 80px;
+      background-color: rgba(49, 49, 49, 0.8); }
+  .menu .icon {
+    padding-left: 230px;
+    width: 200px; }
+    .menu .icon span {
+      padding: 3px 8px;
+      display: inline-block;
+      background-color: rgba(49, 49, 49, 0.6);
+      font-size: 10px;
+      color: white;
+      vertical-align: top; }
+    .menu .icon span.goto {
+      background-color: rgba(49, 49, 49, 0.3); }
+    .menu .icon span.function {
+      margin: 2px 0; }
+
+.page {
+  padding-top: 10px; }
+  .page .left {
+    float: left;
+    width: 70%;
+    padding-right: 5%;
+    padding-top: 10px; }
+    .page .left h3 {
+      color: #313131; }
+    .page .left .icon {
+      width: 100px;
+      height: 100px;
+      line-height: 120px;
+      text-align: center;
+      border-radius: 60px;
+      background-color: #a4a4a4; }
+      .page .left .icon i {
+        font-size: 50px;
+        color: #646464; }
+    .page .left ul li {
+      float: left;
+      width: 33%;
+      list-style: none; }
+  .page .right {
+    float: right;
+    width: 19%;
+    padding: 5px 3%;
+    background-color: #545454;
+    color: white; }
+    .page .right .import-tip {
+      color: #7d7d7d;
+      font-weight: bold; }
+    .page .right p {
+      margin-bottom: 0; }
+    .page .right button {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      padding: 5px 15px;
+      background-color: white;
+      border: 1px solid #575757;
+      color: #2e2e2e; }
+
+footer {
+  margin-top: 20px;
+  height: 7%;
+  background-color: #2e2e2e;
+  color: white; }
+  footer #copy {
+    text-align: center; }
+
+*:before, *:after {
+  box-sizing: inherit; }
+
+* {
+  box-sizing: inherit; }
+
+button {
+  font: normal; }

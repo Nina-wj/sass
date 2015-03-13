@@ -1,0 +1,20 @@
+$mainBgColor: #575757;
+$navBgColor: #2E2E2E;
+$containerWidth: 70%;
+$headerHeight: 40px;
+$color: color;
+$fontColor: #fff;
+@mixin resetMargin{
+	margin: 0;
+}
+@mixin borderset($value: 1px, $color: #fff){
+	border: $value solid $color;
+}
+@mixin padding($key: 1, $value1: 0px, $value2: 0px){
+	@if $key == 1 {padding: $value1;}
+	@if $key == 2 {padding: $value1 $value2;}
+}
+@mixin margin($key: 1, $value1: 0px, $value2: 0px){
+	@if $key == 1 {margin: $value1;}
+	@if $key == 2 {margin: $value1 $value2;}
+}
